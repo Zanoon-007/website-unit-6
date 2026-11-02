@@ -1,4 +1,4 @@
-/* General Website Styling */
+/* GENERAL WEBSITE STYLING */
 {
 margin: 0;
 padding: 0;
@@ -10,7 +10,7 @@ color: #172d23;
 font-family: Arial, sans-serif;
 line-height: 1.6;
 }
-/* Website Header */
+/* WEBSITE HEADER */
 header {
 background-color: #06452c;
 color: white;
@@ -30,11 +30,7 @@ font-size: 38px;
 .council-title h2 {
 font-family: Georgia, serif;
 }
-.council-title p {
-text-align: center;
-font-size: 12px;
-}
-/* Navigation Bar */
+/* NAVIGATION BAR */
 nav {
 display: flex;
 justify-content: space-between;
@@ -62,134 +58,111 @@ color: white;
 text-decoration: none;
 font-weight: bold;
 }
-.nav-links a:hover,
-.nav-links .active {
-border-bottom: 2px solid #e4c46c;
-padding-bottom: 5px;
+.nav-links a:hover {
+text-decoration: underline;
 }
-/* Main Page Sections */
-main {
-padding: 25px 4%;
-}
-section {
+/* INTRODUCTION SECTION */
+.introduction {
 display: flex;
 align-items: center;
-justify-content: space-between;
-gap: 35px;
-padding: 25px;
-margin-bottom: 15px;
-background-color: #fffdf5;
-border: 1px solid #e8e0ce;
-border-radius: 10px;
-}
-/* Section Headings */
-section h2 {
-color: #06452c;
-font-family: Georgia, serif;
-font-size: 27px;
-margin-bottom: 12px;
-}
-/* Introduction */
-.introduction {
-min-height: 330px;
+gap: 30px;
+padding: 30px 5%;
 }
 .intro-text {
 flex: 1;
 }
+.intro-text h2 {
+font-family: Georgia, serif;
+font-size: 30px;
+margin-bottom: 15px;
+}
 .intro-image {
-flex: 2.5;
+flex: 2;
 }
 .intro-image img {
 width: 100%;
-height: 330px;
+height: 350px;
 object-fit: cover;
-border-radius: 8px;
+border-radius: 10px;
 }
-/* Buttons */
-.button {
-display: inline-block;
+/* BUTTONS */
+button {
 background-color: #06452c;
 color: white;
-text-decoration: none;
-padding: 10px 20px;
+padding: 12px 20px;
+border: none;
 border-radius: 6px;
-margin-top: 18px;
+cursor: pointer;
+margin-top: 15px;
 }
-.button:hover {
-background-color: #087346;
+button:hover {
+background-color: #0b6842;
 }
-.secondary {
-background-color: transparent;
-color: #06452c;
-border: 1px solid #06452c;
+/* VALUES SECTION */
+.values-section {
+display: flex;
+align-items: center;
+gap: 30px;
+padding: 30px 5%;
 }
-/* Our Values */
 .values-text {
 flex: 1;
 }
+.values-text h2 {
+font-family: Georgia, serif;
+margin-bottom: 10px;
+}
+.values-text ul {
+padding-left: 25px;
+}
 .values-image {
-flex: 1.5;
+flex: 1;
 }
 .values-image img {
 width: 100%;
 max-height: 300px;
 object-fit: contain;
 }
-.values ul {
-margin: 15px 0 15px 20px;
+/* WHAT DO THEY MEAN SECTION */
+.meaning-section {
+display: flex;
+align-items: center;
+gap: 30px;
+padding: 30px 5%;
 }
-/* What Do They Mean */
 .meaning-text {
 flex: 1;
 }
+.meaning-text h2 {
+font-family: Georgia, serif;
+margin-bottom: 10px;
+}
 .meaning-image {
-flex: 1.5;
+flex: 1;
 }
 .meaning-image img {
 width: 100%;
-height: 270px;
+height: 280px;
 object-fit: cover;
 border-radius: 8px;
 }
-/* Footer */
+/* FOOTER */
 footer {
 background-color: #06452c;
 color: white;
-padding: 35px 5%;
-display: flex;
-justify-content: space-between;
-flex-wrap: wrap;
-gap: 30px;
+padding: 30px 5%;
+text-align: center;
 }
-.footer-section {
-flex: 1;
-min-width: 180px;
-}
-.footer-section h3 {
-margin-bottom: 12px;
-font-family: Georgia, serif;
-}
-.footer-section a {
-display: block;
+footer a {
 color: white;
 text-decoration: none;
-margin-bottom: 7px;
+margin: 10px;
 }
-.footer-section a:hover {
-text-decoration: underline;
-}
-.copyright {
-width: 100%;
-text-align: center;
-border-top: 1px solid #71917e;
-padding-top: 15px;
-margin-top: 15px;
-}
-/* Mobile Layout */
-@media (max-width: 700px) {
+/* MOBILE SCREEN */
+@media screen and (max-width: 700px) {
 .top-header {
 flex-direction: column;
-gap: 12px;
+gap: 15px;
 }
 nav {
 flex-direction: column;
@@ -197,20 +170,15 @@ flex-direction: column;
 .nav-links {
 flex-wrap: wrap;
 justify-content: center;
-gap: 15px;
 }
 nav input {
 width: 100%;
 }
-section {
-flex-direction: column;
-align-items: stretch;
-}
-.intro-image img,
-.meaning-image img {
-height: 220px;
-}
-footer {
+.introduction,
+.values-section,
+.meaning-section {
 flex-direction: column;
 }
+.intro-image img {
+height: 230px;
 }
